@@ -4,7 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Logical Poblem Statement");
+            while (true)
+            {
+                Console.WriteLine("select Program\n 1.FibonacciSeries");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        FibonacciSeries series = new FibonacciSeries();
+                        series.print();
+                        break;
+                }
+            }
+
         }
     }
 }
