@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No");
+                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No\n 5.Temprature Conversion");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -25,6 +25,10 @@
                     case 4:
                         ReverseNo reverseNo = new ReverseNo();
                         reverseNo.NumberCheck();
+                        break;
+                    case 5:
+                        TempConversion tempConversion = new TempConversion();
+                        tempConversion.Conversion();
                         break;
                 }
             }
