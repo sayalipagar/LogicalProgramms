@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No\n 5.Temprature Conversion");
+                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No\n 5.Temprature Conversion\n 6.Monthly Payment");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,6 +30,11 @@
                         TempConversion tempConversion = new TempConversion();
                         tempConversion.Conversion();
                         break;
+                    case 6:
+                        MonthlyPayment monthlyPayment = new MonthlyPayment();
+                        monthlyPayment.Payment();
+                        break;
+                   
                 }
             }
 
