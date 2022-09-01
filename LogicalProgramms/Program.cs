@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No\n 5.Temprature Conversion\n 6.Monthly Payment");
+                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No\n 5.Temprature Conversion\n 6.Monthly Payment\n 7.Stop Watch");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -33,6 +33,10 @@
                     case 6:
                         MonthlyPayment monthlyPayment = new MonthlyPayment();
                         monthlyPayment.Payment();
+                        break;
+                    case 7:
+                        StopWatch stopWatch = new StopWatch();
+                        stopWatch.calElapsedTime();
                         break;
                    
                 }
