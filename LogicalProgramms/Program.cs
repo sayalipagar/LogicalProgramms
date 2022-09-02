@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No\n 5.Temprature Conversion\n 6.Monthly Payment\n 7.Stop Watch\n 8.Day Of Week");
+                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No\n 5.Temprature Conversion\n 6.Monthly Payment\n 7.Stop Watch\n 8.Day Of Week\n 9.Coupon No");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -41,6 +41,10 @@
                     case 8:
                         DayOfWeek dayOfWeek = new DayOfWeek();
                         dayOfWeek.CalDay();
+                        break;
+                    case 9:
+                        CoupenNo coupen = new CoupenNo();
+                        coupen.DistCouponNumber();
                         break;
                 }
             }
