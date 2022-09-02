@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No\n 5.Temprature Conversion\n 6.Monthly Payment\n 7.Stop Watch");
+                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.Perfect No\n 3.Prime No\n 4.Reverse No\n 5.Temprature Conversion\n 6.Monthly Payment\n 7.Stop Watch\n 8.Day Of Week");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -38,7 +38,10 @@
                         StopWatch stopWatch = new StopWatch();
                         stopWatch.calElapsedTime();
                         break;
-                   
+                    case 8:
+                        DayOfWeek dayOfWeek = new DayOfWeek();
+                        dayOfWeek.CalDay();
+                        break;
                 }
             }
 
